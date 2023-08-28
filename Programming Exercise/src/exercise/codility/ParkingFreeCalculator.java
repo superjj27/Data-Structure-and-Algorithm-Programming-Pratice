@@ -17,6 +17,8 @@ public class ParkingFreeCalculator {
             Date entryTime = sdf.parse(enter);
             Date leaveTime = sdf.parse(leave);
 
+            // should use patter matching for checking if the time format is collect before proceeding
+
             int diffInTime = (int)leaveTime.getTime() - (int)entryTime.getTime();
             int diffInHr = (diffInTime / (1000 * 60 * 60)) % 24;
             int diffInMinute = (diffInTime / (1000 * 60)) % 60;
@@ -45,6 +47,7 @@ public class ParkingFreeCalculator {
     }
 
     public static void main(final String[] args) {
-        System.out.println(calculateParkingFee("09:42", "13:4"));
+
+        System.out.println(calculateParkingFee("09:42", "13:42"));
     }
 }
