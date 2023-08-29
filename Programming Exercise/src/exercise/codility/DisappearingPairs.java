@@ -1,5 +1,6 @@
 package exercise.codility;
 
+//Reduce a string containing instances of the letters "A", "B" and "C" via the following rule: remove one occurrence of "AA", "BB" or "CC".
 public class DisappearingPairs {
 
     private static final String[] pairs = {"AA", "BB", "CC"};
