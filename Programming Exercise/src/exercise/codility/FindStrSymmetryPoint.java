@@ -1,4 +1,4 @@
-package exercise.leedcode.stringQuestions;
+package exercise.codility;
 
 import java.util.Arrays;
 import java.util.HashSet;

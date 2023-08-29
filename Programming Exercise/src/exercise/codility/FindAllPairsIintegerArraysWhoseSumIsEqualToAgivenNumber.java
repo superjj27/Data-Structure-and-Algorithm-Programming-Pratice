@@ -17,8 +17,8 @@ public class FindAllPairsIintegerArraysWhoseSumIsEqualToAgivenNumber {
             for (int j=1; j<array.length; j++) {
                 if (array[i] + array[j] == sum) {
                     if (check[i] == false || check[j] == false) {
-                        subResult.add(array[i]);
-                        subResult.add(array[j]);
+                        subResult.add(i);
+                        subResult.add(j);
                         check[i] = true;
                         check[j] = true;
                         System.out.println(i + "," + j);
