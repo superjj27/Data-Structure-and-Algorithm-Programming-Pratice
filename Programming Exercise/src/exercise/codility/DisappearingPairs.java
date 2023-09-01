@@ -26,6 +26,7 @@ public class DisappearingPairs {
         // ABABB
         // ABABB
         // ABA
+
         String S = "ABABACCAB";
         System.out.println(findDisappearingPairs(S));
     }

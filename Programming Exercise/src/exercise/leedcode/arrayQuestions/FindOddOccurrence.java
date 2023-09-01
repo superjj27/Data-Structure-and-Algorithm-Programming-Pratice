@@ -7,20 +7,29 @@ public class FindOddOccurrence {
 
     public static int findOddOccurrence(int[] A) {
 
-        List<Integer> list = Arrays.stream(A).boxed().collect(Collectors.toList());
-        for (int i=0; i<A.length; i++) {
-            int count = Collections.frequency(list, A[i]);
-            if (count % 2 != 0) {
-                return A[i];
-            }
-        }
+        int [] res = Arrays.stream(A)
+                .filter(e -> Collections.frequency(Arrays.stream(A).boxed().collect(Collectors.toList()), e) % 2 != 0)
+                .toArray();
 
-        return -1;
+        return res.length == 0 ? -1 : res[0];
+
+//        List<Integer> res = list.stream()
+//                .filter(e -> Collections.frequency(list, e) % 2 != 0)
+//                .collect(Collectors.toList());
+
+//        for (int i=0; i<A.length; i++) {
+//            int count = Collections.frequency(list, A[i]);
+//            if (count % 2 != 0) {
+//                return A[i];
+//            }
+//        }
+
+        //return -1;
     }
 
     public static void main(final String[] args) {
 
-        int[] array = {9, 3, 9, 3, 9, 7, 9};
+        int[] array = {9, 3, 9, 9, 7, 9, 7};
         System.out.println(findOddOccurrence(array));
     }
 

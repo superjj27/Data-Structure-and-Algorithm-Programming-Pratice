@@ -31,8 +31,6 @@ public class ThreeLetters {
             }
         }
         return res;
-
-
     }
 
     private static void permutation(String perm, String word, HashSet<String> set) {
