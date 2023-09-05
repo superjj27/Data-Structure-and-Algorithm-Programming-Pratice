@@ -1,4 +1,4 @@
-package exercise.leedcode.arrayQuestions;
+package exercise.codility.Array;
 
 public class CyclicRotation {
 

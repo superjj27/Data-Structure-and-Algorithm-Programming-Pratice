@@ -3,7 +3,7 @@ package exercise.codility;
 import java.util.*;
 
 //Find all pairs of integer arrays whose sum is equal to a given number?
-public class FindAllPairsIintegerArraysWhoseSumIsEqualToAgivenNumber {
+public class FindAllPairsIintegerArraysWhoseSumIsEqualToGivenNumber {
     //{ 2, 4, 3, 5, 7, 8, 9 };
 
     public static List<List<Integer>> findNumbersSumEqualToGivenNumber(int[] array, int sum) {
